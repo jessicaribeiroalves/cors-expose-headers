@@ -1,0 +1,14 @@
+{
+  "name": "Azure Infrastructure dev container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node": { "version": "20" },
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish": { "fisher": true }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "postCreateCommand": "/usr/bin/env fish ./.devcontainer/init.sh"
+}
